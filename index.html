@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=q">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="styleQ.css">
+</head>
+
+<body>
+    
+    <header>
+            <h1 class="quiz">Quiz.com</h1>
+                <nav>
+                    <ul>
+                        <li class="nav"><a href="#student-info">Puzzle</a></li>
+                        <li class="nav"><a href="#html-questions">Bingo</a></li>
+                        <li class="nav"><a href="#css-question">Poker</a></li>
+                    </ul>
+                </nav>
+    </header>
+    <main>
+        <form method="post" action="">
+            <section class="info-student">
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label for="name">Name:</label>
+                    <input class="name" type="text" name="name" id="name"/>
+                </div>
+                <div class="info">
+                    <label for="email">Email:</label>
+                    <input class="name" type="email" name="email" id="email"/>
+                </div>
+                <div class="info">  
+                    <label for="birth-date">D.O.B.  
+                        <span class="sr-only"> (date of birth)
+                            <input class="name" type="date" name="birth-date" id="birth-date"/>
+                        </span>
+                    </label>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="fun-questions">
+                <h2 id="fun-questions">Fun Facts</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="fun-questions-one">
+                        <legend>
+                            bats are blind.
+                        </legend>
+                        <lu class="answers-list">
+                            <li>
+                                <label for="q1-a1">
+                                    <input type="radio" name="q1" id="q1-a1" value="true"/>true
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q1-a2">
+                                    <input type="radio" id="q1-a2" name="q1" value="false"/>false
+                                </label>
+                            </li>
+                        </lu>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="fun-questions-two">
+                        <legend>
+                            Ants can lift 5,000 times their body weight.
+                        </legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q2-a1">
+                                    <input type="radio" id="q2-a1" name="q2" value="true"/>true
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q2-a2">
+                                    <input type="radio" id="q2-a2" name="q2" value="false"/>false
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>3</p>
+                    <fieldset class="question" name="fun-questions-three">
+                        <legend>
+                            An octopus has three hearts.
+                        </legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q3-a1">
+                                    <input type="radio" id="q3-a1" name="q3" value="true">true
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q3-a2">
+                                    <input type="radio" id="q3-a2" name="q3" value="false">false
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>4</p>
+                    <fieldset class="question" name="fun-questions-four">
+                        <legend>
+                            There are more countries in South America than Africa. fThere are more countries in South America than Africa. f
+                        </legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q4-a1">
+                                    <input type="radio" id="q4-a1" name="q4" value="true">true
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q4-a2">
+                                    <input type="radio" id="q4-a2" name="q4" value="false">false
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="dark-question">
+                <h2 class="dark-question">Question</h2>
+                <div class="formrow">
+                    <div class="question-block1">
+                        <label for="selector1">
+                            Have you ever had breakfast for dinner?
+                        </label>
+                    </div>
+                    <div class="answer">
+                        <select name="selector" id="selector" required>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formrow">
+                    <div class="question-block1">
+                        <label for="selector2">
+                            Can you touch your toes without bending your knees?
+                        </label>
+                    </div>
+                    <div class="answer">
+                        <select name="selector" id="selector" required>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block1"> 
+                        <label for="textarea">
+                            Who do you think will win the MVP this year?
+                        </label>
+                    </div>
+                    <div class="answer">
+                        <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="I think MVP is gonna be..."></textarea>
+                    </div>
+                </div>
+            </section>
+            <button type="submit">Send</button>
+        </form>
+
+    </main>
+    <footer>
+        <address>
+            <a href="https://www.crazygames.com/game/yes-or-no-challenge">Quiz.com</a></address><br/>
+            Toronto, ON, Canada
+        </address>
+    </footer>
+
+    
+</body>
+</html>
